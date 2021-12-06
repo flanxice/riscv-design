@@ -1,0 +1,50 @@
+// op7
+`define  R_type_op   7'b0110011
+`define  I_type_op   7'b0010011
+`define  SB_type_op  7'b1100011
+`define  LW_op       7'b0000011
+`define  JALR_op     7'b1100111
+`define  SW_op       7'b0100011
+`define  LUI_op      7'b0110111
+`define  AUIPC_op    7'b0010111	
+`define  JAL_op      7'b1101111	
+// funct3
+`define  ADD_funct3      3'b000 
+`define  SUB_funct3      3'b000 
+`define  SLL_funct3      3'b001 
+`define  SLT_funct3      3'b010 
+`define  SLTU_funct3     3'b011 
+`define  XOR_funct3      3'b100 
+`define  SRL_funct3      3'b101 
+`define  SRA_funct3      3'b101 
+`define  OR_funct3       3'b110 
+`define  AND_funct3      3'b111
+`define  ADDI_funct3      3'b000 
+`define  SLLI_funct3      3'b001 
+`define  SLTI_funct3      3'b010 
+`define  SLTIU_funct3     3'b011 
+`define  XORI_funct3      3'b100 
+`define  SRLI_funct3      3'b101 
+`define  SRAI_funct3      3'b101 
+`define  ORI_funct3       3'b101 
+`define  ANDI_funct3      3'b111
+// ALUCode
+`define	 alu_add  4'b0000
+`define	 alu_sub  4'b0001
+`define	 alu_lui  4'b0010
+`define	 alu_and  4'b0011
+`define	 alu_xor  4'b0100
+`define	 alu_or   4'b0101
+`define  alu_sll  4'b0110
+`define	 alu_srl  4'b0111
+`define	 alu_sra  4'b1000
+`define	 alu_slt  4'b1001
+`define	 alu_sltu 4'b1010
+
+`define SB_type_op  7'b1100011
+`define beq_funct3  3'o0
+`define bne_funct3  3'o1
+`define blt_funct3  3'o4
+`define bge_funct3  3'o5
+`define bltu_funct3  3'o6
+`define bgeu_funct3  3'o7

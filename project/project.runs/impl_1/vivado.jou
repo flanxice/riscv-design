@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Dec  6 21:11:00 2021
+# Process ID: 19648
+# Current directory: C:/Users/Fiee/Desktop/cpu_design/project/project.runs/impl_1
+# Command line: vivado.exe -log Risc5CPU.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Risc5CPU.tcl -notrace
+# Log file: C:/Users/Fiee/Desktop/cpu_design/project/project.runs/impl_1/Risc5CPU.vdi
+# Journal file: C:/Users/Fiee/Desktop/cpu_design/project/project.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Risc5CPU.tcl -notrace

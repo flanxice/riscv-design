@@ -1,0 +1,26 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+C:/Users/Fiee/Desktop/cpu_design/project/project.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+C:/Users/Fiee/Desktop/cpu_design/sim/Decode_tb.v,1638690992,verilog,,,,Decode_tb,,,../../../../../source,,,,,
+C:/Users/Fiee/Desktop/cpu_design/sim/IF_tb.v,1638690993,verilog,,,,IF_tb,,,../../../../../source,,,,,
+C:/Users/Fiee/Desktop/cpu_design/sim/Risc5CPU_tb.v,1638690989,verilog,,,,Risc5CPU_tb_v,,,../../../../../source,,,,,
+C:/Users/Fiee/Desktop/cpu_design/source/EX/ALU.v,1638760382,verilog,,C:/Users/Fiee/Desktop/cpu_design/source/ID/Branch.v,C:/Users/Fiee/Desktop/cpu_design/source/Params.h,ALU,,,../../../../../source,,,,,
+C:/Users/Fiee/Desktop/cpu_design/source/EX/EX.v,1638783960,verilog,,C:/Users/Fiee/Desktop/cpu_design/source/PIPELINEREG/EX_DM.v,,EX,,,../../../../../source,,,,,
+C:/Users/Fiee/Desktop/cpu_design/source/EX/Forward.v,1638783962,verilog,,C:/Users/Fiee/Desktop/cpu_design/source/ID/Hazard.v,,Forward,,,../../../../../source,,,,,
+C:/Users/Fiee/Desktop/cpu_design/source/ID/Branch.v,1638793405,verilog,,C:/Users/Fiee/Desktop/cpu_design/source/PIPELINEREG/DM_WB.v,C:/Users/Fiee/Desktop/cpu_design/source/Params.h,BranchTest,,,../../../../../source,,,,,
+C:/Users/Fiee/Desktop/cpu_design/source/ID/Hazard.v,1638758274,verilog,,C:/Users/Fiee/Desktop/cpu_design/source/ID/ID.v,,HazardDetecter,,,../../../../../source,,,,,
+C:/Users/Fiee/Desktop/cpu_design/source/ID/ID.v,1638784543,verilog,,C:/Users/Fiee/Desktop/cpu_design/source/PIPELINEREG/ID_EX.v,,ID,,,../../../../../source,,,,,
+C:/Users/Fiee/Desktop/cpu_design/source/ID/InstDecode.v,1638795040,verilog,,C:/Users/Fiee/Desktop/cpu_design/sim/Decode_tb.v,C:/Users/Fiee/Desktop/cpu_design/source/Params.h,Decode,,,../../../../../source,,,,,
+C:/Users/Fiee/Desktop/cpu_design/source/ID/Registers.v,1638756571,verilog,,C:/Users/Fiee/Desktop/cpu_design/source/TOPMODULE/Risc5CPU.v,,Registers,,,../../../../../source,,,,,
+C:/Users/Fiee/Desktop/cpu_design/source/IF/IF.v,1638784354,verilog,,C:/Users/Fiee/Desktop/cpu_design/source/PIPELINEREG/IF_ID.v,,IF,,,../../../../../source,,,,,
+C:/Users/Fiee/Desktop/cpu_design/source/IF/InstructionROM.v,1638773145,verilog,,C:/Users/Fiee/Desktop/cpu_design/source/ID/Registers.v,,InstructionROM,,,../../../../../source,,,,,
+C:/Users/Fiee/Desktop/cpu_design/source/IPs/DRAM/sim/DRAM.v,1638771700,verilog,,C:/Users/Fiee/Desktop/cpu_design/source/EX/ALU.v,,DRAM,,,../../../../../source,,,,,
+C:/Users/Fiee/Desktop/cpu_design/source/PIPELINEREG/DM_WB.v,1638781860,verilog,,C:/Users/Fiee/Desktop/cpu_design/source/EX/EX.v,,DM_WB_PipeReg,,,../../../../../source,,,,,
+C:/Users/Fiee/Desktop/cpu_design/source/PIPELINEREG/EX_DM.v,1638781837,verilog,,C:/Users/Fiee/Desktop/cpu_design/source/EX/Forward.v,,EX_mem_PinpeReg,,,../../../../../source,,,,,
+C:/Users/Fiee/Desktop/cpu_design/source/PIPELINEREG/ID_EX.v,1638776571,verilog,,C:/Users/Fiee/Desktop/cpu_design/source/IF/IF.v,,ID_EX_PipeReg,,,../../../../../source,,,,,
+C:/Users/Fiee/Desktop/cpu_design/source/PIPELINEREG/IF_ID.v,1638775591,verilog,,C:/Users/Fiee/Desktop/cpu_design/source/ID/InstDecode.v,,IF_ID_PipeReg,,,../../../../../source,,,,,
+C:/Users/Fiee/Desktop/cpu_design/source/Params.h,1638713602,verilog,,,,,,,,,,,,
+C:/Users/Fiee/Desktop/cpu_design/source/TOPMODULE/Risc5CPU.v,1638783076,verilog,,C:/Users/Fiee/Desktop/cpu_design/source/WB/WB.v,,Risc5CPU,,,../../../../../source,,,,,
+C:/Users/Fiee/Desktop/cpu_design/source/WB/WB.v,1638778405,verilog,,C:/Users/Fiee/Desktop/cpu_design/sim/Risc5CPU_tb.v,,WB,,,../../../../../source,,,,,
