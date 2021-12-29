@@ -1,31 +1,35 @@
 `timescale 1ns / 1ps
 
 module ALU_tb;
-	reg [3:0] ALUopcode;
-	reg [31:0] ALUin_a;
-	reg [31:0] ALUin_b;
+	reg [3:0] ALUCode;
+	reg [31:0] A;
+	reg [31:0] B;
 
 	// Outputs
 	wire [31:0] ALUout;
 	
 ALU uint(
-    .ALUopcode(ALUopcode), 
+    .ALUopcode(ALUCode), 
     .ALUout(ALUout), 
-    .ALUin_a(ALUin_a), 
-    .ALUin_b(ALUin_b));
+    .ALUin_a(A), 
+    .ALUin_b(B));
 
 initial begin		      
-    ALUopcode = 4'd0; ALUin_a = 32'h80000000; ALUin_b = 32'h80000000;//add
-    #20 ALUopcode = 4'd1; ALUin_a = 32'h70F0C0E0; ALUin_b = 32'h10003054;//sub
-    #20 ALUopcode = 4'd2; ALUin_a = 32'h70F0C0E0; ALUin_b = 32'h00003000;//lui
-    #20 ALUopcode = 4'd3; ALUin_a = 32'hFF0C0E10; ALUin_b = 32'h10DF30FF;//and
-    #20 ALUopcode = 4'd4; ALUin_a = 32'hFF0C0E10; ALUin_b = 32'h10DF30FF;//xor
-    #20 ALUopcode = 4'd5; ALUin_a = 32'hFF0C0E10; ALUin_b = 32'h10DF30FF;//or
-    #20 ALUopcode = 4'd6; ALUin_a = 32'hFFFFE0FF; ALUin_b = 32'h00000004;//sll
-    #20 ALUopcode = 4'd7; ALUin_a = 32'hFFFFE0FF; ALUin_b = 32'h00000004;//srl
-    #20 ALUopcode = 4'd8; ALUin_a = 32'hFFFFE0FF; ALUin_b = 32'h00000004;//sra
-    #20 ALUopcode = 4'd9; ALUin_a = 32'hFF000004; ALUin_b = 32'h700000FF;//slt
-    #20 ALUopcode = 4'd10;ALUin_a = 32'hFF000004; ALUin_b = 32'h700000FF;//sltu
+		// Initialize Inputs
+		ALUCode = 4'd0; A = 32'h00004012; B = 32'h1000200F;//add      
+		// Add stimulus here
+		#100 ALUCode = 4'd0; A = 32'h80000000;	B = 32'h80000000;//add
+		#100 ALUCode = 4'd1; A = 32'h70F0C0E0;	B = 32'h10003054;//sub
+		#100 ALUCode = 4'd2; A = 32'h70F0C0E0;	B = 32'h00003000;//lui
+		#100 ALUCode = 4'd3; A = 32'hFF0C0E10;	B = 32'h10DF30FF;//and
+		#100 ALUCode = 4'd4; A = 32'hFF0C0E10;	B = 32'h10DF30FF;//xor
+		#100 ALUCode = 4'd5; A = 32'hFF0C0E10;	B = 32'h10DF30FF;//or
+		#100 ALUCode = 4'd6; A = 32'hFFFFE0FF;	B = 32'h00000004;//sll
+		#100 ALUCode = 4'd7; A = 32'hFFFFE0FF;	B = 32'h00000004;//srl
+		#100 ALUCode = 4'd8; A = 32'hFFFFE0FF; B = 32'h00000004;//sra
+		#100 ALUCode = 4'd9; A = 32'hFF000004;	B = 32'h700000FF;//slt
+		#100 ALUCode = 4'd10;A = 32'hFF000004;	B = 32'h700000FF;//sltu
+		#100 $stop;
     #20 $stop;
 end  
 endmodule

@@ -1,6 +1,6 @@
 Vivado Simulator v2021.1
 Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: C:/Users/Fiee/SoftWare/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto db70b68506644b6bacc4a4969a5bb5b8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Decode_tb_behav xil_defaultlib.Decode_tb xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Users/Fiee/SoftWare/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto db70b68506644b6bacc4a4969a5bb5b8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Risc5CPU_tb_v_behav xil_defaultlib.Risc5CPU_tb_v xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -8,7 +8,24 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.InstructionROM
+Compiling module xil_defaultlib.IF
+Compiling module xil_defaultlib.IF_ID_PipeReg
+Compiling module xil_defaultlib.Registers
 Compiling module xil_defaultlib.Decode
-Compiling module xil_defaultlib.Decode_tb
+Compiling module xil_defaultlib.BranchTest
+Compiling module xil_defaultlib.HazardDetecter
+Compiling module xil_defaultlib.ID
+Compiling module xil_defaultlib.ID_EX_PipeReg
+Compiling module xil_defaultlib.Forward
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.EX_mem_PinpeReg
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="k...
+Compiling module xil_defaultlib.DRAM
+Compiling module xil_defaultlib.DM_WB_PipeReg
+Compiling module xil_defaultlib.WB
+Compiling module xil_defaultlib.Risc5CPU
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot Decode_tb_behav
+Compiling module xil_defaultlib.Risc5CPU_tb_v
+Built simulation snapshot Risc5CPU_tb_v_behav

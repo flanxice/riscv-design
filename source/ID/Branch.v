@@ -17,7 +17,6 @@ always @(*) begin
         case (funct3)
         `beq_funct3 : Branch <= isequal;
         `bne_funct3 : Branch <= ~isequal;
-        // `bne_funct3 : Branch <= 0;
         `blt_funct3 : Branch <= isLT;
         `bge_funct3 : Branch <= ~isLT;
         `bltu_funct3 : Branch <= isLTU;

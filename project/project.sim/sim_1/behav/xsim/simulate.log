@@ -1,2 +1,5 @@
 Time resolution is 1 ps
-$stop called at time : 2600 ns : File "C:/Users/Fiee/Desktop/cpu_design/sim/Decode_tb.v" Line 57
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING in Risc5CPU_tb_v.uut.DRAM0.inst at time               250000 ns: 
+Reading from out-of-range address. Max address in Risc5CPU_tb_v.uut.DRAM0.inst is          63
+$stop called at time : 2251 ns : File "C:/Users/Fiee/Documents/GitHouse/Riscv-design/sim/Risc5CPU_tb.v" Line 39

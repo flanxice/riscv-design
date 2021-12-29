@@ -1,0 +1,7 @@
+Running: xsim.dir/Risc5CPU_tb_v_time_synth/xsimk.exe -simmode gui -wdb Risc5CPU_tb_v_time_synth.wdb -simrunnum 0 -socket 63233
+Design successfully loaded
+Design Loading Memory Usage: 31484 KB (Peak: 31484 KB)
+Design Loading CPU Usage: 93 ms
+Simulation completed
+Simulation Memory Usage: 39576 KB (Peak: 39576 KB)
+Simulation CPU Usage: 311 ms

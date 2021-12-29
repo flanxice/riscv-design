@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../source" \
+"../../../../../source/IPs/DRAM/sim/DRAM.v" \
+"../../../../../source/EX/ALU.v" \
+"../../../../../source/ID/Branch.v" \
+"../../../../../source/PIPELINEREG/DM_WB.v" \
+"../../../../../source/EX/EX.v" \
+"../../../../../source/PIPELINEREG/EX_DM.v" \
+"../../../../../source/EX/Forward.v" \
+"../../../../../source/ID/Hazard.v" \
+"../../../../../source/ID/ID.v" \
+"../../../../../source/PIPELINEREG/ID_EX.v" \
+"../../../../../source/IF/IF.v" \
+"../../../../../source/PIPELINEREG/IF_ID.v" \
+"../../../../../source/ID/InstDecode.v" \
+"../../../../../source/IF/InstructionROM.v" \
+"../../../../../source/ID/Registers.v" \
+"../../../../../source/TOPMODULE/Risc5CPU.v" \
+"../../../../../source/WB/WB.v" \
+"../../../../../sim/Risc5CPU_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../source" \
+"Risc5CPU_tb_v_time_synth.v" \
+"../../../../../../sim/Risc5CPU_tb.v" \
+
+# Do not sort compile order
+nosort

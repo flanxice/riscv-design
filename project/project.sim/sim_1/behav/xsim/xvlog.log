@@ -1,2 +1,51 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fiee/Desktop/cpu_design/sim/Decode_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Decode_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/IPs/DRAM/sim/DRAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DRAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/EX/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/ID/Branch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/PIPELINEREG/DM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DM_WB_PipeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/EX/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/PIPELINEREG/EX_DM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_mem_PinpeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/EX/Forward.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Forward
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/ID/Hazard.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HazardDetecter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/ID/ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/PIPELINEREG/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX_PipeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/IF/IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/PIPELINEREG/IF_ID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_ID_PipeReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/ID/InstDecode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decode
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'JALR' is not allowed [C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/ID/InstDecode.v:20]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/IF/InstructionROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionROM
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'dout' is not allowed [C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/IF/InstructionROM.v:22]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/ID/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/TOPMODULE/Risc5CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Risc5CPU
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'PC' is not allowed [C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/TOPMODULE/Risc5CPU.v:16]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'Instruction_id' is not allowed [C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/TOPMODULE/Risc5CPU.v:21]
+INFO: [VRFC 10-2458] undeclared symbol rdAddr_wb, assumed default net type wire [C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/TOPMODULE/Risc5CPU.v:32]
+INFO: [VRFC 10-2458] undeclared symbol MemRead_ex, assumed default net type wire [C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/TOPMODULE/Risc5CPU.v:33]
+WARNING: [VRFC 10-2938] 'MemRead_ex' is already implicitly declared on line 33 [C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/TOPMODULE/Risc5CPU.v:41]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'ALUResult_ex' is not allowed [C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/TOPMODULE/Risc5CPU.v:55]
+WARNING: [VRFC 10-2938] 'rdAddr_wb' is already implicitly declared on line 32 [C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/TOPMODULE/Risc5CPU.v:56]
+WARNING: [VRFC 10-3248] data object 'RegWrite_wb' is already declared [C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/TOPMODULE/Risc5CPU.v:57]
+WARNING: [VRFC 10-3703] second declaration of 'RegWrite_wb' ignored [C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/TOPMODULE/Risc5CPU.v:57]
+WARNING: [VRFC 10-3248] data object 'RegWrite_mem' is already declared [C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/TOPMODULE/Risc5CPU.v:65]
+WARNING: [VRFC 10-3703] second declaration of 'RegWrite_mem' ignored [C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/TOPMODULE/Risc5CPU.v:65]
+WARNING: [VRFC 10-3248] data object 'RegWrite_wb' is already declared [C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/TOPMODULE/Risc5CPU.v:75]
+WARNING: [VRFC 10-3703] second declaration of 'RegWrite_wb' ignored [C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/TOPMODULE/Risc5CPU.v:75]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/WB/WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Fiee/Documents/GitHouse/Riscv-design/sim/Risc5CPU_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Risc5CPU_tb_v

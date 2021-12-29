@@ -8,12 +8,13 @@ module Registers(
 
 wire [31:0] ReadData1, ReadData2;
 reg [31:0] registers_32 [31:0];  //32*32
+// load out 2 reg data
 assign ReadData1 = (ReadRegister1 == 5'd0) ? 32'd0 : registers_32[ReadRegister1];
-assign ReadData2 = (ReadRegister2 == 5'd0) ? 32'd0 : registers_32[ReadRegister2];  // load out 2 reg data
+assign ReadData2 = (ReadRegister2 == 5'd0) ? 32'd0 : registers_32[ReadRegister2]; 
 always @(posedge sys_clk) begin        // positive clk write
     if(RegWrite) registers_32[WriteRegister] <= WriteData;
 end
-// add forword if Writeid == Readid
+// add forword if WriteAddr == ReadAddr
 wire rs1Sel = RegWrite && (WriteRegister != 0) && (WriteRegister == ReadRegister1);
 wire rs2Sel = RegWrite && (WriteRegister != 0) && (WriteRegister == ReadRegister2);
 assign regout1 = rs1Sel ? WriteData : ReadData1;

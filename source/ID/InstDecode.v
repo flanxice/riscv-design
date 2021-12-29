@@ -38,7 +38,7 @@ assign ALUSrcA = JALR || JAL || AUIPC;
 assign ALUSrcB[1] = JAL || JALR;
 assign ALUSrcB[0] = ~(R_type || JAL || JALR);
 
-// ALU_
+// ALU_Code
 wire [5:0] type_RI = {R_type, I_type, funct3, funct6_7};
 always @(*) begin
 if(LUI) ALUCode = `alu_lui;
@@ -54,15 +54,22 @@ case (type_RI)
     {2'b10, `SRA_funct3, 1'b1}: ALUCode = `alu_sra;
     {2'b10, `OR_funct3, 1'b0}: ALUCode = `alu_or;
     {2'b10, `AND_funct3, 1'b0}: ALUCode = `alu_and;
-    {2'b01, `ADDI_funct3, 1'bx}: ALUCode = `alu_add;
-    {2'b01, `SLLI_funct3, 1'bx}: ALUCode = `alu_sll;
-    {2'b01, `SLTI_funct3, 1'bx}: ALUCode = `alu_slt;
-    {2'b01, `SLTIU_funct3, 1'bx}: ALUCode = `alu_sltu;
-    {2'b01, `XORI_funct3, 1'bx}: ALUCode = `alu_xor;
+    {2'b01, `ADDI_funct3, 1'b0}: ALUCode = `alu_add;
+    {2'b01, `ADDI_funct3, 1'b1}: ALUCode = `alu_add;
+    {2'b01, `SLLI_funct3, 1'b0}: ALUCode = `alu_sll;
+    {2'b01, `SLLI_funct3, 1'b1}: ALUCode = `alu_sll;
+    {2'b01, `SLTI_funct3, 1'b0}: ALUCode = `alu_slt;
+    {2'b01, `SLTI_funct3, 1'b1}: ALUCode = `alu_slt;
+    {2'b01, `SLTIU_funct3, 1'b0}: ALUCode = `alu_sltu;
+    {2'b01, `SLTIU_funct3, 1'b1}: ALUCode = `alu_sltu;
+    {2'b01, `XORI_funct3, 1'b0}: ALUCode = `alu_xor;
+    {2'b01, `XORI_funct3, 1'b1}: ALUCode = `alu_xor;
     {2'b01, `SRLI_funct3, 1'b0}: ALUCode = `alu_srl;
     {2'b01, `SRAI_funct3, 1'b1}: ALUCode = `alu_sra;
-    {2'b01, `ORI_funct3, 1'bx}: ALUCode = `alu_or;
-    {2'b10, `ANDI_funct3, 1'bx}: ALUCode = `alu_and;
+    {2'b01, `ORI_funct3, 1'b0}: ALUCode = `alu_or;
+    {2'b01, `ORI_funct3, 1'b1}: ALUCode = `alu_or;
+    {2'b10, `ANDI_funct3, 1'b0}: ALUCode = `alu_and;
+    {2'b10, `ANDI_funct3, 1'b1}: ALUCode = `alu_and;
     default: ALUCode = `alu_add;
 endcase
 end

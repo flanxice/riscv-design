@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/Fiee/Desktop/cpu_design/project/project.runs/synth_1/Risc5CPU.tcl"
+  variable script "C:/Users/Fiee/Documents/GitHouse/Riscv-design/project/project.runs/synth_1/Risc5CPU.tcl"
   variable category "vivado_synth"
 }
 
@@ -77,36 +77,36 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/Fiee/Desktop/cpu_design/project/project.cache/wt [current_project]
-set_property parent.project_path C:/Users/Fiee/Desktop/cpu_design/project/project.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Fiee/Documents/GitHouse/Riscv-design/project/project.cache/wt [current_project]
+set_property parent.project_path C:/Users/Fiee/Documents/GitHouse/Riscv-design/project/project.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/Fiee/Desktop/cpu_design/project/project.cache/ip [current_project]
+set_property ip_output_repo c:/Users/Fiee/Documents/GitHouse/Riscv-design/project/project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog C:/Users/Fiee/Desktop/cpu_design/source/Params.h
-set_property file_type "Verilog Header" [get_files C:/Users/Fiee/Desktop/cpu_design/source/Params.h]
+read_verilog C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/Params.h
+set_property file_type "Verilog Header" [get_files C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/Params.h]
 read_verilog -library xil_defaultlib {
-  C:/Users/Fiee/Desktop/cpu_design/source/EX/ALU.v
-  C:/Users/Fiee/Desktop/cpu_design/source/ID/Branch.v
-  C:/Users/Fiee/Desktop/cpu_design/source/PIPELINEREG/DM_WB.v
-  C:/Users/Fiee/Desktop/cpu_design/source/EX/EX.v
-  C:/Users/Fiee/Desktop/cpu_design/source/PIPELINEREG/EX_DM.v
-  C:/Users/Fiee/Desktop/cpu_design/source/EX/Forward.v
-  C:/Users/Fiee/Desktop/cpu_design/source/ID/Hazard.v
-  C:/Users/Fiee/Desktop/cpu_design/source/ID/ID.v
-  C:/Users/Fiee/Desktop/cpu_design/source/PIPELINEREG/ID_EX.v
-  C:/Users/Fiee/Desktop/cpu_design/source/IF/IF.v
-  C:/Users/Fiee/Desktop/cpu_design/source/PIPELINEREG/IF_ID.v
-  C:/Users/Fiee/Desktop/cpu_design/source/ID/InstDecode.v
-  C:/Users/Fiee/Desktop/cpu_design/source/IF/InstructionROM.v
-  C:/Users/Fiee/Desktop/cpu_design/source/ID/Registers.v
-  C:/Users/Fiee/Desktop/cpu_design/source/WB/WB.v
-  C:/Users/Fiee/Desktop/cpu_design/source/TOPMODULE/Risc5CPU.v
+  C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/EX/ALU.v
+  C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/ID/Branch.v
+  C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/PIPELINEREG/DM_WB.v
+  C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/EX/EX.v
+  C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/PIPELINEREG/EX_DM.v
+  C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/EX/Forward.v
+  C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/ID/Hazard.v
+  C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/ID/ID.v
+  C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/PIPELINEREG/ID_EX.v
+  C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/IF/IF.v
+  C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/PIPELINEREG/IF_ID.v
+  C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/ID/InstDecode.v
+  C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/IF/InstructionROM.v
+  C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/ID/Registers.v
+  C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/WB/WB.v
+  C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/TOPMODULE/Risc5CPU.v
 }
-read_ip -quiet C:/Users/Fiee/Desktop/cpu_design/source/IPs/DRAM/DRAM.xci
-set_property used_in_implementation false [get_files -all c:/Users/Fiee/Desktop/cpu_design/source/IPs/DRAM/DRAM_ooc.xdc]
+read_ip -quiet C:/Users/Fiee/Documents/GitHouse/Riscv-design/source/IPs/DRAM/DRAM.xci
+set_property used_in_implementation false [get_files -all c:/Users/Fiee/Documents/GitHouse/Riscv-design/source/IPs/DRAM/DRAM_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
